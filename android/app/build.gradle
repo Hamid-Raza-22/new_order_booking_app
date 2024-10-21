@@ -26,7 +26,8 @@ if (flutterVersionName == null) {
 android {
     namespace = "com.example.new_order_booking_app"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    //ndkVersion = flutter.ndkVersion
+    ndkVersion "25.1.8937393" // Update the NDK version to the highest compatible one
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -38,7 +39,7 @@ android {
         applicationId = "com.example.new_order_booking_app"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdk = flutter.minSdkVersion
+        minSdkVersion 23
         targetSdk = flutter.targetSdkVersion
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
